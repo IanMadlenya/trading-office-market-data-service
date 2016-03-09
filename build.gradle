@@ -71,6 +71,10 @@ jar {
     version = '1.0.0'
 }
 
+bootRun {
+  systemProperties = System.properties
+}
+
 defaultTasks 'clean', 'bootRepackage'
 
 task stage {
